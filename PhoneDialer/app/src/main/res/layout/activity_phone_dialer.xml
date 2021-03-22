@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        style="@style/padding"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        style="@style/padding"
+        android:inputType="number"
+        android:hint="(+40)07xxx"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:rowCount="4"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/button1"
+                android:tag="@string/digitButton"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="@string/digit1" />
+
+            <Button
+                android:id="@+id/button2"
+                android:tag="@string/digitButton"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/digit2" />
+
+            <Button
+                android:id="@+id/button3"
+                android:tag="@string/digitButton"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="@string/digit3" />
+
+            <Button
+                android:id="@+id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:text="@string/digit4" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:text="@string/digit5" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:tag="@string/digitButton"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:text="@string/digit6" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:tag="@string/digitButton"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:text="@string/digit7" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:text="@string/digit8" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:text="@string/digit9" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:text="@string/star" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:text="@string/digit0" />
+
+            <Button
+                android:id="@id/butdigit"
+                android:theme="@style/AppTheme.Button"
+                style="@style/AppTheme.Button"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:text="@string/hash" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="6">
+            <ImageButton
+                android:id="@+id/call"
+                android:layout_height="100dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/call_icon"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
